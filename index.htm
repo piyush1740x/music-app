@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <style>
+
+    </style>
+    <link rel="stylesheet" href="script.js">
+</head>
+
+<body>
+    <div class="bap">
+        <nav>
+            <div>
+                <h1>AUD PLAYER</h1>
+                <img src="/logo.png" alt="">
+            </div>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+            <a class="btn" href="login.html"><button>Login!</button></a>
+            <input type="checkbox" id="check">
+            <label for="check"><i id="bars" class="fa-solid fa-bars"></i></label>
+        </nav>
+        <div class="papa">
+            <div class="box1">
+                <h1>Hi there im <span class="name">HARSH</span>
+                    <hr>
+                </h1>
+                <h1>Im a <span class="text"></span></h1>
+                <p>Persuing BCA from integral univercity <span class="text">Lucknow</span> it's my 1<sup>st</sup>
+                    year
+                    and secont semester this is a music player project hope you'll appreciate it</p>
+                <img src="/dev.avif" alt="">
+            </div>
+            <div class="box2">
+                <div class="music">
+                    <div>
+                        <h2 class="message"></h2>
+                        <img id="cover" src="/images.jpeg" alt="sorry image not found">
+                        <h3>Songs</h3>
+                        <p>Play and enjoy it<br> (Aud Player pe)</p>
+                        <audio id="song" src="/songs/kash.mp3"></audio>
+                        <div class="cntrls">
+                            <input type="range" id="progress" value="0">
+                            <div class="icns">
+                                <i id="previous" class="fa-solid fa-backward" onclick="previousSong()"></i>
+                                <i id="play" class="fa-solid fa-play"></i>
+                                <i id="pause" class="fa-solid fa-pause"></i>
+                                <i id="next" class="fa-solid fa-forward" onclick="nextSong()"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="skills">
+        <span>
+            <h1>My skills as a Prorgamer</h1>
+        </span>
+        <div class="lists">>
+            <div>
+                <img src="/html.png" alt="">
+                <h2>HTML</h2>
+
+            </div>
+            <div>
+                <img src="/css.png" alt="">
+                <h2>CSS</h2>
+            </div>
+            <div>
+                <img src="/js.png" alt="">
+                <h2>Java script</h2>
+            </div>
+            <div>
+                <img src="/tailwind.png" alt="">
+                <h2>Tailwind</h2>
+            </div>
+            <div>
+                <img src="/c.jpg" alt="">
+                <h2>C++ </h2>
+            </div>
+            <div>
+                <img src="/git-hubb.png" alt="">
+                <h2>gitHub</h2>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <main>
+            <div class="contact-section">
+                <h4>Contact Us</h4>
+                <p>Email: chaudharypiyush596@gmail.com</p>
+                <p>Number: 9651256267</p>
+            </div>
+            <div class="icons">
+                <h4>Follow Us</h4>
+                <ul class="social-icons">
+                    <li><a href="https://x.com/harsh_up_gkp?s=09" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/piyush_up_gkp?igsh=MTR0a3AyZG9haTAxag==" target="_blank"><i
+                                class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/harsh-chaudhary-b9826229a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://wa.me/9651256267" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a href="https://github.com/piyush1740x"> <i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://facebook.com/YourPage" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                </ul>
+            </div>
+
+        </main>
+        <div class="copyright-section">
+            <p>&copy; 2024 Your Website Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".text", {
+            strings: ['Coder', 'Developer', 'Designer', 'Programer'],
+            typeSpeed: 50,
+            backSpeed: 40,
+            loop: true,
+        });
+        var typed = new Typed(".message", {
+            strings: ["You can play the song", "play it now...!"],
+            typeSpeed: 50,
+            backSpeed: 40,
+            loop: true,
+        });
+    </script>
+    <script src="/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

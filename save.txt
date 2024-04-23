@@ -1,0 +1,55 @@
+const audio = document.getElementById('audio');
+const cover = document.getElementById('cover');
+const songs = ['song1.mp3', 'song2.mp3', 'song3.mp3']; // Add your song file paths
+const covers = ['cover1.jpg', 'cover2.jpg', 'cover3.jpg']; // Add your cover image file paths
+
+let currentSongIndex = 0;
+
+function playSong() {
+  audio.src = songs[currentSongIndex];
+  cover.src = covers[currentSongIndex];
+  audio.play();
+}
+
+function nextSong() {
+  currentSongIndex = (currentSongIndex + 1) % songs.length;
+  playSong();
+}
+
+function previousSong() {
+  currentSongIndex = (currentSongIndex - 1 + songs.length) % songs.length;
+  playSong();
+}
+
+playSong(); // Play the first song when the page loads
+
+
+
+
+play.addEventListener('click', function () {
+    togglePlayPause();
+});
+
+function togglePlayPause() {
+    if (audio.paused) {
+        audio.play();
+        play.className = "fa-solid fa-pause"; 
+    } else {
+        audio.pause();
+        play.className = "fa-solid fa-play"; 
+    }
+}
+
+
+ <div class="contact-section">
+                <h4>Contact Us</h4>
+                <h5>Email: chaudharypiyush596@gmail.com</h5>
+                <h5>Number: 9651256267</h5>
+            </div>
+
+                
+
+
+                            <div class="copyright-section">
+                <p>&copy; 2024 Your Website Name. All rights reserved.</p>
+            </div>

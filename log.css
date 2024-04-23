@@ -1,0 +1,108 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+body {
+    background: url(/download.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.login-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    
+
+}
+
+.login-box {
+    border: 1px solid black;
+    box-shadow: 10px 10px 10px black ;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 20%;
+}
+
+.login-box h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 100%;
+    padding: 10px;
+}
+
+form input {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 2rem;
+    width: 100%;
+}
+
+form button {
+    height: 2rem;
+    width: 100%;
+    background-color: rgb(72, 196, 238);
+}
+.additional-options{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+     
+}
+.eye{
+    position: relative;
+    width: 100%;
+}
+.eye img{
+    height:21px;
+    position: absolute;
+    left: 220px;right: 0px;top:34px;
+    mix-blend-mode: multiply;
+    
+}
+#img1{
+    display: none;
+}
+#img2{
+    height: 20px;
+}
+@media (max-width:600px) {
+
+
+    .login-box{
+        width:80%;
+        height: 50%;
+    }
+    .eye img{
+        height:21px;
+        position: absolute;
+        left:255px;right: 0px;top:34px;
+        mix-blend-mode: multiply;
+    }
+
+    button{
+        margin-top: 50px;
+    }
+}
